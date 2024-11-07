@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Carousel from './sections/Caraousel';
 import CategoryBar from './sections/CategoryBar';
 import MoviesDisp from './sections/MoviesDisp';
-import Nav from './sections/Nav';
+import nav from './sections/nav';
 import './App.css';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <Nav onSearch={setSearchQuery} />
+      <nav onSearch={setSearchQuery} />
       <CategoryBar />
       <div className="">
         {!searchQuery && <Carousel />}
