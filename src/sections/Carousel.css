@@ -1,0 +1,21 @@
+.custom-slider .slick-dots {
+    bottom: 25px;
+    color: #fff;
+  }
+  
+  .custom-slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 0; 
+    margin: 0;
+    
+  }
+  
+  .custom-slider .slick-dots li button:before {
+    color: #fff;
+  }
+  
+  .custom-slider .slick-dots li.slick-active button:before {
+    color: #000;
+  }
+  
