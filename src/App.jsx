@@ -4,6 +4,7 @@ import CategoryBar from './sections/CategoryBar';
 import MoviesDisp from './sections/MoviesDisp';
 import Nav from './sections/Nav';
 import './App.css';
+import Footer from './sections/Footer';
 
 function App() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -19,6 +20,7 @@ function App() {
         {searchQuery ? `Search Results for "${searchQuery}":` : 'Recommended Movies:'}
       </h2>
       <MoviesDisp searchQuery={searchQuery} />
+      <Footer/>
     </>
   );
 }
